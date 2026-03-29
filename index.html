@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.E.P.O. Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="musicBtn" onclick="toggleMusic()">🎵 Музыка</button>
+    <audio id="music" loop><source src="audio/Msc Main Menu.mp3"></audio>
+
+    <header>
+        <h1>R.E.P.O.</h1>
+        <p class="subtitle">Руководство по выживанию</p>
+        <nav>
+            <a href="#monsters">Монстры</a>
+            <a href="#upgrades">Улучшения</a>
+            <a href="#lore">История</a>
+            <a href="#test">Тест</a>
+        </nav>
+    </header>
+
+    <div class="ad">
+        <h3>🎮 Игровые аксессуары</h3>
+        <p>Мыши, клавиатуры и наушники для геймеров</p>
+        <a href="https://www.dns-shop.ru/">Подробнее →</a>
+    </div>
+
+    <section id="monsters">
+        <h2>👹 Монстры</h2>
+        <div class="cards">
+            <div class="card monster">
+                <img src="img/Chef.jpg" alt="Chef">
+                <h3>Chef (Лягушка)</h3>
+                <p>Зеленое, неуклюжее, относительно маленькое существо, похожее на лягушку в окровавленной поварской униформе.Как только Шеф заметит полубота, он издаст звук, подпрыгнет и, оказавшись достаточно близко к полуботу, начнет атаку.</p>
+                <div class="danger">Угроза: <span class="stars">⭐⭐</span></div>
+            </div>
+            <div class="card monster">
+                <img src="img/Headman.jpg" alt="Headman">
+                <h3>Headman (Голова)</h3>
+                <p>Это гигантская парящая голова без тела со светящимися желтыми глазами. Судя по седеющим волосам, белым бровям, морщинистому лицу и заметному облысению, это пожилой человек. На затылке у него хвост, а глаза глубоко запали. Бесцельно парит в воздухе, время от времени щелкает зубами.</p>
+                <div class="danger">Угроза: <span class="stars">⭐⭐⭐</span></div>
+            </div>
+            <div class="card monster">
+                <img src="img/Huntsman.jpg" alt="Huntsman">
+                <h3>Huntsman (Дед)</h3>
+                <p>Бесцельно бродит вокруг, ориентируясь по звуку выстрелов. Иногда охотник издает гудящий звук, сигнализируя о своем присутствии. Обладая слухом, который в пять раз острее, чем у обычных монстров, охотник стреляет во все, что издает шум поблизости. Это касается ценных предметов, полуботов и даже других монстров.</p>
+                <div class="danger">Угроза: <span class="stars">⭐⭐⭐⭐</span></div>
+            </div>
+            <div class="card monster">
+                <img src="img/Mentalist.jpg" alt="Mentalist">
+                <h3>Mentalist (Пришелец)</h3>
+                <p>Менталист хаотично парит над уровнем, пока не заметит игрока. Как только он обнаружит игрока и окажется достаточно близко к нему, он начнет создавать вокруг себя сферу фиолетовой ауры, которая поднимет любого игрока, предмет или монстра небольшого размера, оказавшегося внутри. Через несколько секунд сфера ауры станет красной и больше не сможет ничего поднимать. Вскоре после этого Менталист с силой швырнет все, что поднял, на землю, нанося значительный физический урон.</p>
+                <div class="danger">Угроза: <span class="stars">⭐⭐⭐⭐</span></div>
+            </div>
+            <div class="card monster">
+                <img src="img/Robe.jpg" alt="Robe">
+                <h3>Robe (Монашка)</h3>
+                <p>При преследовании Мантия движется к полуботу гораздо медленнее. Если полубот посмотрит на Мантию, она резко ускорится, при этом будет шипеть, поднимать руки, а экран полубота по краям потемнеет. Если полубот отвернется, Мантия снова начнет медленно приближаться.</p>
+                <div class="danger">Угроза: <span class="stars">⭐⭐⭐⭐⭐</span></div>
+            </div>
+            <div class="card monster">
+                <img src="img/Spewer.jpg" alt="Spewer">
+                <h3>Spewer (Блевулька)</h3>
+                <p>Это маленькое светло-коричневое существо с пятью короткими щупальцеобразными конечностями, торчащими из задней части тела. Его основная часть — тело/голова — похожа на набор зубных протезов со швом, который четко разделяет верхнюю и нижнюю челюсти. Большой прикус Скиркера обнажает красноватые верхние десны и острые белые зубы, которые постоянно видны. Когда рот Spewer открывается, можно увидеть два костных выступа на верхней челюсти, соединенных с нижней челюстью. Кроме того, у него кривой конусообразный нос и два глаза с черными склерами и ярко-красными угловатыми зрачками.</p>
+                <div class="danger">Угроза: <span class="stars">⭐⭐</span></div>
+            </div>
+            <div class="card monster">
+                <img src="img/Tick.jpg" alt="Tick">
+                <h3>Tick (Клещ)</h3>
+                <p>Это плоский бежевый жучок, внешне напоминающий настоящих клещей. Его тело бежевого цвета покрыто множеством пор, а щеки и спина — бледно-розовым румянцем. У него простая мордочка с толстыми лососевыми губами, слегка приоткрытыми, и двумя черными точками-глазами. Под телом находятся четыре коричнево-черные лапки, похожие на лапки насекомых, с помощью которых он передвигается.</p>
+                <div class="danger">Угроза: <span class="stars">⭐</span></div>
+            </div>
+            <div class="card monster">
+                <img src="img/Gambit.jpg" alt="Gambit">
+                <h3>Gambit (Казик)</h3>
+                <p>Гамбит выглядит как гуманоидное существо среднего размера с маленьким телом. Голова Гамбита комично большая, на лице у него маленькие, глубоко посаженные черные глаза, а посередине лица — язык, который постоянно высовывается. У него длинные руки, маленькие ноги и ступни, а также небольшая попа.</p>
+                <div class="danger">Угроза: <span class="stars">⭐⭐⭐</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="upgrades">
+        <h2>⬆️ Улучшения</h2>
+        <div class="cards">
+            <div class="card upgrade health">
+                <img src="img/hp.jpg" alt="Health">
+                <h3>💚 Здоровье</h3>
+                <p>Улучшение здоровья увеличит запас здоровья вашего полуробота на 20 очков. Это позволит вам выдерживать больше атак и жить дольше.</p>
+            </div>
+            <div class="card upgrade strength">
+                <img src="img/strong.jpg" alt="Strength">
+                <h3>💪 Сила</h3>
+                <p>Улучшение силы увеличивает силу захвата вашего полуробота на 1 единицу. Это значительно упрощает переноску, перемещение и броски ценных предметов и позволяет поднимать монстров с определенным запасом силы.</p>
+            </div>
+            <div class="card upgrade jump">
+                <img src="img/jump.jpg" alt="Jump">
+                <h3>🦘 Доп. прыжок</h3>
+                <p>Улучшение «Дополнительный прыжок» позволит вашему полуроботу совершить дополнительный прыжок в воздухе. Это можно использовать, чтобы перепрыгивать большие промежутки, забираться на возвышенности или избежать урона от падения.</p>
+            </div>
+            <div class="card upgrade roll">
+                <img src="img/jump_q.jpg" alt="Roll">
+                <h3>🔄 Кувырок</h3>
+                <p>Улучшение «Кувырок» увеличивает скорость и дальность вашего «Кувырка». Это позволяет повысить мобильность и эффективность в бою, но не увеличивает наносимый урон.</p>
+            </div>
+            <div class="card upgrade rest">
+                <img src="img/stan.jpg" alt="Rest">
+                <h3>🧘 Отдых</h3>
+                <p>Улучшение «Отдых в приседе» увеличивает скорость восстановления выносливости в приседе на 1 единицу в секунду (или 0,5 единицы в секунду при движении). Это значительно повышает эффективность восстановления выносливости в приседе, укрытии или ползании.</p>
+            </div>
+            <div class="card upgrade sprint">
+                <img src="img/stan_w.jpg" alt="Sprint">
+                <h3>⚡ Спринт</h3>
+                <p>Улучшение скорости спринта увеличит скорость спринта вашего полуробота на 20% и снизит расход выносливости при спринте в секунду на 1. Это позволит вам с легкостью сокращать дистанцию и быстрее убегать от монстров.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="lore">
+        <h2>📖 История мира</h2>
+        <div class="lore-block">
+            <h3>🦠 Болезнь Полыни</h3>
+            <p>Человечество практически вымерло из-за «Болезни Полыни». Немногие выжившие, вероятно, обладали иммунитетом, но мутировали в монстров из-за побочных эффектов воздействия льда. Станция McJannek, по-видимому, была центром изучения болезни, но эксперименты вышли из-под контроля.</p>
+        </div>
+        <div class="lore-block">
+            <h3>🤖 Таксмен</h3>
+            <p><strong>Происхождение:</strong> ТаксменТаксмен — разумный ИИ, представленный в виде плачущего смайлика с плотью под маской. Он общается с игроками исключительно с помощью эмодзи.
+
+Таксмен, скорее всего, является экспериментом датского правительства, получившим разум в начале эпидемии. Это объясняет его огромные ресурсы, необходимые для производства полуботов и техники.</p>
+            <p><strong>Мотивация:</strong>Неясно, зачем Таксмен посылает полуботов за ценностями, учитывая его неограниченные ресурсы. Возможно, это просто способ развлечься в постапокалиптическом мире, используя полуботов как пешек в своей игре.</p>
+        </div>
+    </section>
+
+    <div class="ad">
+        <h3>⚡ Игровые мониторы</h3>
+        <p>144Hz и выше для комфортной игры</p>
+        <a href="#">Смотреть →</a>
+    </div>
+
+    <section id="test">
+        <h2>📝 Тест</h2>
+        <form id="quiz">
+            <div class="q">
+                <p>1. Кто щелкает зубами? (впишите)</p>
+                <input type="text" name="q1" required>
+            </div>
+            <div class="q">
+                <p>2. Коричневое существо с 5 щупальцами?</p>
+                <label><input type="radio" name="q2" value="spewer"> Spewer</label>
+                <label><input type="radio" name="q2" value="tick"> Tick</label>
+                <label><input type="radio" name="q2" value="chef"> Chef</label>
+                <label><input type="radio" name="q2" value="robe"> Robe</label>
+            </div>
+            <div class="q">
+                <p>3. У кого большая голова?</p>
+                <label><input type="radio" name="q3" value="huntsman"> Huntsman</label>
+                <label><input type="radio" name="q3" value="spewer"> Spewer</label>
+                <label><input type="radio" name="q3" value="gambit"> Gambit</label>
+                <label><input type="radio" name="q3" value="robe"> Robe</label>
+            </div>
+            <div class="q">
+                <p>4. Кто похож на лягушку? (впишите)</p>
+                <input type="text" name="q4" required>
+            </div>
+            <div class="q">
+                <p>5. Издает гудящий звук?</p>
+                <label><input type="radio" name="q5" value="huntsman"> Huntsman</label>
+                <label><input type="radio" name="q5" value="headman"> Headman</label>
+                <label><input type="radio" name="q5" value="mentalist"> Mentalist</label>
+                <label><input type="radio" name="q5" value="gambit"> Gambit</label>
+            </div>
+            <div class="q">
+                <p>6. +20 здоровья?</p>
+                <label><input type="radio" name="q6" value="health"> Здоровье</label>
+                <label><input type="radio" name="q6" value="strength"> Сила</label>
+                <label><input type="radio" name="q6" value="jump"> Прыжок</label>
+                <label><input type="radio" name="q6" value="roll"> Кувырок</label>
+            </div>
+            <div class="q">
+                <p>7. Доп. прыжок? (впишите)</p>
+                <input type="text" name="q7" required>
+            </div>
+            <div class="q">
+                <p>8. Улучшает кувырок?</p>
+                <label><input type="radio" name="q8" value="strength"> Сила</label>
+                <label><input type="radio" name="q8" value="rest"> Отдых</label>
+                <label><input type="radio" name="q8" value="health"> Здоровье</label>
+                <label><input type="radio" name="q8" value="roll"> Кувырок</label>
+            </div>
+            <div class="q">
+                <p>9. +20% скорости? (впишите)</p>
+                <input type="text" name="q9" required>
+            </div>
+            <div class="q">
+                <p>10. Кто такой Таксмен?</p>
+                <label><input type="radio" name="q10" value="ai"> ИИ</label>
+                <label><input type="radio" name="q10" value="monster"> Монстр</label>
+                <label><input type="radio" name="q10" value="human"> Человек</label>
+                <label><input type="radio" name="q10" value="robot"> Робот</label>
+            </div>
+            <button type="submit">✅ Проверить</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+    <footer>
+        <p>© 2025 R.E.P.O.</p>
+    </footer>
+
+    <script>
+        function toggleMusic() {
+            const m = document.getElementById('music');
+            if (m.paused) { m.volume = 0.3; m.play(); }
+            else { m.pause(); }
+        }
+
+        document.getElementById('quiz').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const f = new FormData(this);
+            let s = 0;
+            const a = {
+                q1: ['headman','голова'], q2: 'spewer', q3: 'gambit',
+                q4: ['chef','лягушка'], q5: 'huntsman', q6: 'health',
+                q7: ['дополнительный прыжок','прыжок'], q8: 'roll',
+                q9: ['спринт','скорость'], q10: 'ai'
+            };
+
+            ['q1','q4','q7','q9'].forEach(q => {
+                const u = (f.get(q)||'').toLowerCase().trim();
+                const c = a[q];
+                if (Array.isArray(c)) { if (c.some(x => u.includes(x))) s++; }
+                else if (u.includes(c)) s++;
+            });
+
+            ['q2','q3','q5','q6','q8','q10'].forEach(q => {
+                if (f.get(q) === a[q]) s++;
+            });
+
+            let r = '', c = '';
+            if (s >= 9) { r = 'Омагад да ты шаришь! 🔥'; c = 'excellent'; }
+            else if (s >= 7) { r = 'Красавчик! 👍'; c = 'good'; }
+            else if (s >= 5) { r = 'Новенький 📚'; c = 'average'; }
+            else { r = 'Давай по новой! 💪'; c = 'bad'; }
+
+            document.getElementById('result').className = 'result show ' + c;
+            document.getElementById('result').innerHTML = 
+                '<h3>Результат: ' + s + '/10</h3><p>' + r + '</p>';
+        });
+    </script>
+</body>
+</html>
