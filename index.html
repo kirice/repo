@@ -223,14 +223,14 @@
                 q9: ['улучшеня здоровья','здоровье'], q10: 'ai'
             };
 
-            ['q1','q4','q7','q9'].forEach(q => {
+            ['q1','q4','q5','q7','q9'].forEach(q => {
                 const u = (f.get(q)||'').toLowerCase().trim();
                 const c = a[q];
                 if (Array.isArray(c)) { if (c.some(x => u.includes(x))) s++; }
                 else if (u.includes(c)) s++;
             });
 
-            ['q2','q3','q5','q6','q8','q10'].forEach(q => {
+            ['q2','q3','q6','q8','q10'].forEach(q => {
                 if (f.get(q) === a[q]) s++;
             });
 
