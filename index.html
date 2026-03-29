@@ -142,59 +142,56 @@
         <h2>📝 Тест</h2>
         <form id="quiz">
             <div class="q">
-                <p>1. Кто щелкает зубами? (впишите)</p>
+                <p>1. Кто из мобов время от времени щелкает зубами? (впишите)</p>
                 <input type="text" name="q1" required>
             </div>
             <div class="q">
-                <p>2. Коричневое существо с 5 щупальцами?</p>
+                <p>2. Выбери моба по описанию. Это маленькое светло-коричневое существо с пятью короткими щупальцеобразными конечностями, торчащими из задней части тела.</p>
                 <label><input type="radio" name="q2" value="spewer"> Spewer</label>
                 <label><input type="radio" name="q2" value="tick"> Tick</label>
                 <label><input type="radio" name="q2" value="chef"> Chef</label>
                 <label><input type="radio" name="q2" value="robe"> Robe</label>
             </div>
             <div class="q">
-                <p>3. У кого большая голова?</p>
+                <p>3.  У какого моба голова комично большая?</p>
                 <label><input type="radio" name="q3" value="huntsman"> Huntsman</label>
                 <label><input type="radio" name="q3" value="spewer"> Spewer</label>
                 <label><input type="radio" name="q3" value="gambit"> Gambit</label>
                 <label><input type="radio" name="q3" value="robe"> Robe</label>
             </div>
             <div class="q">
-                <p>4. Кто похож на лягушку? (впишите)</p>
+                <p>4. Какаой моб похож на лягушку? (впишите)</p>
                 <input type="text" name="q4" required>
             </div>
             <div class="q">
-                <p>5. Издает гудящий звук?</p>
-                <label><input type="radio" name="q5" value="huntsman"> Huntsman</label>
-                <label><input type="radio" name="q5" value="headman"> Headman</label>
-                <label><input type="radio" name="q5" value="mentalist"> Mentalist</label>
-                <label><input type="radio" name="q5" value="gambit"> Gambit</label>
+                <p>5. Выбери моба по описанию. Издает гудящий звук, сигнализируя о своем присутствии. Обладая слухом, который в пять раз острее, чем у обычных монстров.</p>
+                <input type="text" name="q5" required>
             </div>
             <div class="q">
-                <p>6. +20 здоровья?</p>
-                <label><input type="radio" name="q6" value="health"> Здоровье</label>
-                <label><input type="radio" name="q6" value="strength"> Сила</label>
-                <label><input type="radio" name="q6" value="jump"> Прыжок</label>
-                <label><input type="radio" name="q6" value="roll"> Кувырок</label>
+                <p>6.  Какое улучшение увеличивает здоровье бота на 20 очков?</p>
+                <label><input type="radio" name="q6" value="health"> Улучшение здоровье</label>
+                <label><input type="radio" name="q6" value="strength"> Улучшение силы</label>
+                <label><input type="radio" name="q6" value="jump"> Улучшение дополнительный прыжок</label>
+                <label><input type="radio" name="q6" value="roll"> Улучшение кувырок</label>
             </div>
             <div class="q">
-                <p>7. Доп. прыжок? (впишите)</p>
+                <p>7. Какое улучшение позволит вашему полуроботу совершить дополнительный прыжок в воздухе? (впишите)</p>
                 <input type="text" name="q7" required>
             </div>
             <div class="q">
-                <p>8. Улучшает кувырок?</p>
+                <p>8. Какое улучшение синего цвета?</p>
                 <label><input type="radio" name="q8" value="strength"> Сила</label>
                 <label><input type="radio" name="q8" value="rest"> Отдых</label>
                 <label><input type="radio" name="q8" value="health"> Здоровье</label>
                 <label><input type="radio" name="q8" value="roll"> Кувырок</label>
             </div>
             <div class="q">
-                <p>9. +20% скорости? (впишите)</p>
+                <p>9. Какое улучшение зеленое? (впишите)</p>
                 <input type="text" name="q9" required>
             </div>
             <div class="q">
                 <p>10. Кто такой Таксмен?</p>
-                <label><input type="radio" name="q10" value="ai"> ИИ</label>
+                <label><input type="radio" name="q10" value="ai"> Разумный ИИ</label>
                 <label><input type="radio" name="q10" value="monster"> Монстр</label>
                 <label><input type="radio" name="q10" value="human"> Человек</label>
                 <label><input type="radio" name="q10" value="robot"> Робот</label>
@@ -205,7 +202,7 @@
     </section>
 
     <footer>
-        <p>© 2025 R.E.P.O.</p>
+        <p>© 2026 R.E.P.O.</p>
     </footer>
 
     <script>
@@ -221,9 +218,9 @@
             let s = 0;
             const a = {
                 q1: ['headman','голова'], q2: 'spewer', q3: 'gambit',
-                q4: ['chef','лягушка'], q5: 'huntsman', q6: 'health',
+                q4: ['chef','лягушка'], q5: ['huntsman', 'дед'], q6: 'health',
                 q7: ['дополнительный прыжок','прыжок'], q8: 'roll',
-                q9: ['спринт','скорость'], q10: 'ai'
+                q9: ['улучшеня здоровья','здоровье'], q10: 'ai'
             };
 
             ['q1','q4','q7','q9'].forEach(q => {
